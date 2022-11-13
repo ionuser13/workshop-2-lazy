@@ -19,6 +19,10 @@ const createImageNode = () => {
     imgWrap.style.display = "inline-block";
     imgWrap.appendChild(image);
     div.appendChild(imgWrap)
+
+    appendedImgs++;
+    consolePrint();
+
     return div
 }
 
