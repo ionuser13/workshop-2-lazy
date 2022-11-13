@@ -3,7 +3,8 @@ const isIntersecting = (entry) => {
 }
 const loadImage = (entry) => {
     const container = entry.target;
-    const image = container.firstChild;
+    const imageWrap = container.firstChild;
+    const image = imageWrap.firstChild;
     const url = image.dataset.src;
     image.src = url;
     watcher.unobserve(container);
