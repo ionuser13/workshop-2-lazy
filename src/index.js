@@ -1,6 +1,8 @@
 import {registerImg} from "./lazy"
 
 const button = document.querySelector("button.p-4");
+const clearButton = document.querySelector(".clear");
+const montNode = document.querySelector("#images")
 const min = 1;
 const max = 122;
 const random = () => Math.floor(Math.random()*(max - min)) + min
@@ -22,10 +24,14 @@ const createImageNode = () => {
 
 const addImages = () => {
     const newImage = createImageNode();
-    const montNode = document.querySelector("#images")
     montNode.append(newImage);
     registerImg(newImage)
 }
 addImages()
 button.addEventListener("click", addImages)
 
+//clear all foxes
+const deleteImages = () => {
+    montNode.innerHTML = "";
+}
+clearButton.addEventListener("click", deleteImages)
