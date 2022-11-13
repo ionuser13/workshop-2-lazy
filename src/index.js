@@ -10,7 +10,7 @@ const createImageNode = () => {
     div.className = "p-4";
     const image = document.createElement("img");
     image.className = "mx-auto my-4 w-60";
-    image.src = `https://randomfox.ca/images/${random()}.jpg`;
+    image.dataset.src = `https://randomfox.ca/images/${random()}.jpg`;
     div.append(image)
     return div
 }
