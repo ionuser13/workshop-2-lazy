@@ -1,5 +1,5 @@
 // const apiFox = "https://randomfox.ca/floof/";
-// const button = document.querySelector("button.p-4");
+const button = document.querySelector("button.p-4");
 
 // async function fetchData(url) {
 //     try {
@@ -29,6 +29,10 @@ const createImageNode = () => {
     return div
 }
 
-const newImage = createImageNode();
-const montNode = document.querySelector("#images")
-montNode.append(newImage, createImageNode(), createImageNode(), createImageNode(), createImageNode(), createImageNode())
+const addImages = () => {
+    const newImage = createImageNode();
+    const montNode = document.querySelector("#images")
+    montNode.append(newImage)
+}
+addImages()
+button.addEventListener("click", addImages)
