@@ -2,7 +2,9 @@ const isIntersecting = (entry) => {
     return entry.isIntersecting
 }
 const action = (entry) => {
-    console.log("buenas")
+    const node = entry.target;
+    console.log("buenas");
+    watcher.unobserve(node)
 }
 const watcher = new IntersectionObserver((entries) => {
     entries
