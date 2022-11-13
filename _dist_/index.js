@@ -1,20 +1,6 @@
-// const apiFox = "https://randomfox.ca/floof/";
-const button = document.querySelector("button.p-4");
+import {registerImg} from "./lazy.js"
 
-// async function fetchData(url) {
-//     try {
-//         const response = await fetch(url);
-//         const data = response.json();
-//         renderImg(data.image)
-//     }
-//     catch (error) {
-//         console.error(error);
-//     }
-// }
-// async function generateImage() {
-//     const img = await fetchData(apiFox);
-// }
-// button.addEventListener("click", generateImage)
+const button = document.querySelector("button.p-4");
 const min = 1;
 const max = 122;
 const random = () => Math.floor(Math.random()*(max - min)) + min
@@ -32,7 +18,9 @@ const createImageNode = () => {
 const addImages = () => {
     const newImage = createImageNode();
     const montNode = document.querySelector("#images")
-    montNode.append(newImage)
+    montNode.append(newImage);
+    registerImg(newImage)
 }
 addImages()
 button.addEventListener("click", addImages)
+
