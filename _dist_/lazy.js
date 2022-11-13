@@ -7,6 +7,8 @@ const loadImage = (entry) => {
     const image = imageWrap.firstChild;
     const url = image.dataset.src;
     image.src = url;
+    loadedImgs++
+    consolePrint()
     watcher.unobserve(container);
 }
 const watcher = new IntersectionObserver((entries) => {

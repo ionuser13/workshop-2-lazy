@@ -58,6 +58,16 @@
     </div>
 
     <!-- Add more scripts here -->
+    <script>
+      let appendedImgs = 0;
+      let loadedImgs = 0;
+
+      function consolePrint() {
+        console.log(`⚪${appendedImgs} have been added`);
+        console.log(`🟣${loadedImgs} have been loaded`);
+        console.log("---------------------------------------");
+      }
+    </script>
     <script type="module" src="/_dist_/index.js"></script>
   </body>
 </html>
