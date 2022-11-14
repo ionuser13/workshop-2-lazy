@@ -1,7 +1,7 @@
 import h from "../_snowpack/pkg/hyperscript.js"
 import {registerImg} from "./lazy.js"
 
-const button = document.querySelector("button.p-4");
+const button = document.querySelector("button.main-btn");
 const clearButton = document.querySelector(".clear");
 const montNode = document.querySelector("#images")
 const min = 1;
