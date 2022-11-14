@@ -20,11 +20,11 @@
       type="text/css"
       href="%PUBLIC_URL%/_dist_/index.css"
     />
-    <title>Snowpack & Tailwind App</title>
+    <title>Fox Site</title>
   </head>
   <body>
     <div class="mx-auto w-full">
-      <div class="text-center">
+      <div class="text-center relative">
         <div class="upper-section h-80 align-middle flex flex-col justify-center bg-no-repeat bg-cover bg-center bg-fixed w-full">
           <h3
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10 my-4"
@@ -36,12 +36,14 @@
           >
             Made by @ionuser13
           </p>
+          <p class="logo absolute w-36"><i class="fa-brands fa-firefox text-9xl"></i></p>
         </div>
-        <div class="buttons flex gap-8 w-max mx-auto my-6">
-          <button class="p-4 bg-indigo-500 rounded-xl">Get Image</button>
-          <button class="p-4 bg-indigo-500 rounded-xl clear">Clear All</button>
-        </div>
-        <div id="images">
+        <div class="content mt-24">
+          <div class="buttons flex gap-8 w-max mx-auto">
+            <button class="p-4 bg-indigo-500 rounded-xl">Get Image</button>
+            <button class="p-4 bg-indigo-500 rounded-xl clear">Clear All</button>
+          </div>
+          <div id="images" class="flex flex-wrap justify-center"></div>
         </div>
       </div>
     </div>
@@ -58,5 +60,6 @@
       }
     </script>
     <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
+    <script src="https://kit.fontawesome.com/58afabde18.js" crossorigin="anonymous"></script>
   </body>
 </html>
