@@ -1,3 +1,8 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+.upper-section {
+    background-image: url('https://wallpapercrafter.com/th800/69010-fox-wild-artist-digital-art.jpg');
+    height: 50vh;
+}
