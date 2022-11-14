@@ -1,7 +1,7 @@
 import h from "hyperscript"
 import {registerImg} from "./lazy"
 
-const button = document.querySelector("button.p-4");
+const button = document.querySelector("button.main-btn");
 const clearButton = document.querySelector(".clear");
 const montNode = document.querySelector("#images")
 const min = 1;
